@@ -17,7 +17,7 @@ with plt.xkcd():
     ax = plt.gca()
     ax.spines['right'].set_color('none')
     ax.spines['top'].set_color('none')
-    ax.spines['bottom'].set_position(('data',0))
-    ax.spines['left'].set_position(('data',0))
+    ax.spines['bottom'].set_position(('data', 0))
+    ax.spines['left'].set_position(('data', 0))
 
     fig.savefig('images/style.png')
