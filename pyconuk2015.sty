@@ -1,0 +1,29 @@
+\ProvidesPackage{pyconuk2015}
+\beamertemplatenavigationsymbolsempty
+\usepackage{lmodern}
+\usepackage{fontspec}
+\setsansfont{Arial}
+\newfontfamily\HumorSans[Ligatures=TeX]{["Humor-Sans.ttf"]}
+\usepackage{pdfcomment}
+    \newcommand{\pdfnote}[1]{\marginnote{\pdfcomment[icon=note]{#1}}}
+\usepackage{tikz}
+    \usetikzlibrary{shapes.geometric, arrows, fit, trees, calc,decorations.pathmorphing,patterns}
+
+\pgfdeclaredecoration{freehand}{start}
+{
+  \state{start}[width = +0pt,
+                next state=step,
+                persistent precomputation = \pgfdecoratepathhascornerstrue]{}
+  \state{step}[auto end on length    = 3pt,
+               auto corner on length = 3pt,
+               width=+2pt]
+  {
+    \pgfpathlineto{
+      \pgfpointadd
+      {\pgfpoint{2pt}{0pt}}
+      {\pgfpoint{rand*0.25pt}{rand*0.25pt}}
+    }
+  }
+  \state{final}
+  {}
+}
