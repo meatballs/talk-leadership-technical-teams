@@ -9,15 +9,15 @@ with plt.xkcd():
     fig = plt.figure()
     plt.plot(x, y)
 
-    plt.xticks([])
-    plt.yticks([])
-    plt.xlabel('Relative Expertise ->')
-    plt.ylabel('Authoritarianism ->')
+    plt.xticks([-10, 10], ['Rookie', 'Guru'])
+    plt.yticks([-10, 10], ['Hands Off', 'Authoritarian'])
+    plt.xlabel('Expertise')
+    plt.ylabel('Style')
 
-    ax = plt.gca()
-    ax.spines['right'].set_color('none')
-    ax.spines['top'].set_color('none')
-    ax.spines['bottom'].set_position(('data', 0))
-    ax.spines['left'].set_position(('data', 0))
+    axes = plt.gca()
+    axes.xaxis.set_label_coords(0.65, 0.45)
+    axes.yaxis.set_label_coords(0.45, 0.65)
+    for spine in axes.spines.itervalues():
+        spine.set_position(('data', 0))
 
     fig.savefig('images/style.png')
