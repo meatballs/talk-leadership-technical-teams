@@ -1,15 +1,27 @@
 % Comment to allow building from within this file
 %!TEX root = pyconuk2015.tex
 
-\tikzstyle{item} = [decorate, ellipse, line width=0.5mm, draw=blue, minimum height=15mm]
+\tikzstyle{item} = [decorate, ellipse, line width=0.4mm, draw=blue, minimum height=14mm]
+\tikzstyle{line} = [line width=0.5mm]
 
 \begin{center}
     \HumorSans
-    \resizebox{8cm}{!}{
-
+    \resizebox{10cm}{!}{
         \begin{tikzpicture}[decoration=freehand]
+            \node (team) [item, circle, draw=red] at (0, 0) {Team};
+            \node (customers) [item] at (90:3) {Customers};
+            \node (investors) [item] at (20:4) {Investors};
+            \node (others) [item] at (340:4) {Other Teams};
+            \node (process) [item] at (270:3) {Process};
+            \node (resources) [item] at (200:4) {Resources};
+            \node (deliverables) [item] at (160:4) {Deliverables};
 
-              \node (deliverables) [item] at (330:1.5) {Deliverables};
+            \freedraw [line](team) -- (customers);
+            \freedraw [line](team) -- (investors);
+            \freedraw [line](team) -- (others);
+            \freedraw [line](team) -- (process);
+            \freedraw [line](team) -- (resources);
+            \freedraw [line](team) -- (deliverables);
 
         \end{tikzpicture}
     }
