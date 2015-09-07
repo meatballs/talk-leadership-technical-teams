@@ -9,20 +9,24 @@
     \resizebox{10cm}{!}{
         \begin{tikzpicture}[decoration=freehand]
             \node (team) [item, circle, draw=red] at (0, 0) {Team};
+            \pause
             \node (customers) [item] at (90:3) {Customers};
-            \node (investors) [item] at (20:4) {Investors};
-            \node (others) [item] at (340:4) {Other Teams};
-            \node (process) [item] at (270:3) {Process};
-            \node (resources) [item] at (200:4) {Resources};
-            \node (deliverables) [item] at (160:4) {Deliverables};
-
             \freedraw [line](team) -- (customers);
+            \pause
+            \node (investors) [item] at (20:4) {Investors};
             \freedraw [line](team) -- (investors);
+            \pause
+            \node (others) [item] at (340:4) {Other Teams};
             \freedraw [line](team) -- (others);
+            \pause
+            \node (process) [item] at (270:3) {Process};
             \freedraw [line](team) -- (process);
+            \pause
+            \node (resources) [item] at (200:4) {Resources};
             \freedraw [line](team) -- (resources);
+            \pause
+            \node (deliverables) [item] at (160:4) {Deliverables};
             \freedraw [line](team) -- (deliverables);
-
         \end{tikzpicture}
     }
 \end{center}
