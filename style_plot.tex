@@ -1,0 +1,31 @@
+% Comment to allow building from within this file
+%!TEX root = pyconuk2015.tex
+
+\tikzstyle{axis} = [line width=0.5mm]
+\tikzstyle{sweetspot} = [
+    decorate, ellipse, rotate=45, line width=0.5mm, draw=green,
+    fill=green, opacity=0.2,
+    minimum width=80mm, minimum height=10mm]
+\tikzstyle{danger} = [
+    decorate, circle, line width=0.5mm, draw=red,
+    fill=red, opacity=0.2, font=\small, text opacity=1,
+    minimum width=28mm]
+
+\begin{center}
+    \HumorSans
+    \begin{tikzpicture}[decoration=freehand]
+        \freedraw [axis] (0, -3) -- (0, 3);
+        \freedraw [axis] (-3, 0) -- (3, 0);
+        \node at (-4, 0) {Rookie};
+        \node at (4, 0) {Guru};
+        \node at (0, 3.5) {Dictator};
+        \node at (0, -3.5) {Observer};
+        \pause
+
+        \node [sweetspot] at (0, 0) {};
+        \pause
+        \node [danger] at (-1.5, 1.5) {Git};
+        \pause
+        \node [danger] at (1.5, -1.5) {Subversion};
+    \end{tikzpicture}
+\end{center}
