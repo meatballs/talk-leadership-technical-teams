@@ -7,7 +7,7 @@
 \newfontfamily\HumorSans[Ligatures=TeX]{Humor Sans}
 \setbeamerfont{itemize/enumerate body}{size=\Large}
 \usepackage{pdfcomment}
-    \newcommand{\pdfnote}[1]{\marginnote{\pdfcomment[icon=note]{#1}}}
+    \newcommand{\speakernote}[1]{\marginnote{\pdfcomment[icon=note]{#1}}}
 \usepackage{tikz}
     \usetikzlibrary{shapes.geometric, arrows, fit, trees, calc,decorations.pathmorphing,patterns}
 
@@ -36,10 +36,11 @@
  }
 \def\freedraw#1;{\draw[freehand] #1;}
 
-\newcommand{\blankscreen}{
+\newcommand{\blankscreen}[1]{
   \bgroup
     \setbeamercolor{background canvas}{bg=black}
     \begin{frame}[plain]{}
+      \speakernote{#1}
     \end{frame}
     \egroup
 }
