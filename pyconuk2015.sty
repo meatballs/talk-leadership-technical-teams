@@ -1,5 +1,6 @@
 \ProvidesPackage{pyconuk2015}
 \beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
 \usepackage{lmodern}
 \usepackage{fontspec}
 \usepackage{fontawesome}
@@ -41,6 +42,7 @@
   \bgroup
     \setbeamercolor{background canvas}{bg=black}
     \begin{frame}[plain]{}
+      \addtocounter{framenumber}{-1}
       \speakernote{#1}
     \end{frame}
     \egroup
