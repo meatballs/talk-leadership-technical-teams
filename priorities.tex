@@ -1,0 +1,42 @@
+% Comment to allow building from within this file
+%!TEX root = pyconuk2015.tex
+
+\blankscreen{}
+
+\begin{frame}{}
+  \tikzstyle{item} = [decorate, ellipse, line width=0.4mm, draw=blue, minimum height=14mm]
+    \tikzstyle{line} = [line width=0.5mm]
+
+    \begin{center}
+        \HumorSans
+        \resizebox{10cm}{!}{
+            \begin{tikzpicture}[decoration=freehand]
+                \node (team) [item, circle, draw=red] at (0, 0) {Team};
+                \node (customers) [item] at (90:3) {Customers};
+
+                \freedraw [line](team) -- (customers);
+                \node (investors) [item] at (20:4) {Investors};
+                \freedraw [line](team) -- (investors);
+
+                \node (others) [item] at (340:4) {Other Teams};
+                \freedraw [line](team) -- (others);
+
+                \node (process) [item] at (270:3) {Process};
+                \freedraw [line](team) -- (process);
+
+                \node (resources) [item] at (200:4) {Resources};
+                \freedraw [line](team) -- (resources);
+
+                \node (deliverables) [item] at (160:4) {Deliverables};
+                \freedraw [line](team) -- (deliverables);
+            \end{tikzpicture}
+        }
+    \end{center}
+
+  \speakernote{
+    Your items may be different\textCR
+    Mind map seems to work better than checklists\textCR
+    \textCR
+    ** Expect the Unexpected **
+  }
+\end{frame}
