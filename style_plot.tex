@@ -14,18 +14,15 @@
 \begin{center}
     \HumorSans
     \begin{tikzpicture}[decoration=freehand]
-        \freedraw [axis] (0, -3) -- (0, 3);
-        \freedraw [axis] (-3, 0) -- (3, 0);
+        \freedraw[axis] (0, -3) -- (0, 3);
+        \freedraw[axis] (-3, 0) -- (3, 0);
         \node at (-4, 0) {Rookie};
         \node at (4, 0) {Guru};
         \node at (0, 3.5) {Dictator};
         \node at (0, -3.5) {Observer};
-        \pause
 
-        \node [sweetspot] at (0, 0) {};
-        \pause
-        \node [danger] at (-1.5, 1.5) {Git};
-        \pause
-        \node [danger] at (1.5, -1.5) {Subversion};
+        \node<2->[sweetspot] at (0, 0) {};
+        \node<3->[danger] at (-1.5, 1.5) {Git};
+        \node<4->[danger] at (1.5, -1.5) {Subversion};
     \end{tikzpicture}
 \end{center}
