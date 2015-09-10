@@ -40,9 +40,11 @@
 
 \newcommand{\blankscreen}[1]{
   \bgroup
-    \setbeamercolor{background canvas}{bg=black}
-    \begin{frame}[plain]{}
+    \begin{frame}{}
       \addtocounter{framenumber}{-1}
+      \begin{center}
+        \includegraphics[scale=0.5]{images/pycon-uk}
+      \end{center}
       \speakernote{#1}
     \end{frame}
     \egroup
