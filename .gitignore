@@ -101,6 +101,7 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+*.xdv
 
 # output
 *.pdf

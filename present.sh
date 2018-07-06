@@ -1,1 +1,1 @@
-presentation.py -d 20 pyconuk2015.pdf
+python2 /usr/local/bin/presentation.py -d 20 main.pdf
