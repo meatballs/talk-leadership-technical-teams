@@ -1,14 +1,15 @@
 % Comment to allow building from within this file
 %!TEX root = main.tex
 
-\begin{frame}{Leadership Styles}
-  \begin{itemize}
-    \item Dictatorial
-    \item Paternalistic
-    \item Consensual
-    \item Democratic
-    \item Hands Off
-  \end{itemize}
+\begin{frame}
+    \frametitle{Leadership Styles}
+    \begin{itemize}
+        \item Dictatorial
+        \item Paternalistic
+        \item Consensual
+        \item Democratic
+        \item Hands Off
+    \end{itemize}
 \end{frame}
 
 \tikzstyle{axis} = [line width=0.5mm]
@@ -21,14 +22,15 @@
     fill=red, opacity=0.2, font=\small, text opacity=1,
     minimum width=28mm]
 
-\begin{frame}[label=style_plot]{Style vs. Expertise}
+\begin{frame}[label=style_plot]
+    \frametitle{Style vs. Expertise}
     \begin{center}
         \HumorSans
         \begin{tikzpicture}[decoration=freehand]
             \freedraw[axis] (0, -3) -- (0, 3);
             \freedraw[axis] (-3, 0) -- (3, 0);
             \node at (-4, 0) {Rookie};
-            \node at (4, 0) {Guru};
+            \node at (4, 0) {Expert};
             \node at (0, 3.5) {Dictator};
             \node at (0, -3.5) {Observer};
 

@@ -1,0 +1,7 @@
+{
+	"folders": [{
+    	"path": ".",
+        "file_exclude_patterns":
+            ["*.aux", "*.fdb_latexmk", "*.fls", "*.nav", "*.out", "*.snm", "*.synctex.gz", "*.toc", "*.upa", "*.xdv"]}
+	]
+}
